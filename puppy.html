@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Paws</title>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #f4ece2;
+            height: 100vh;
+            margin: 0;
+            width: 100%;
+            font-family: 'Dancing Script';
+            font-size: large;
+            color: #5b4636;
+        }
+        header {
+            box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to left, #8d6e63, #a1887f);
+            padding: 10px 20px;
+            margin: 0;
+            text-align: center;
+            font-family: 'Dancing Script';
+        }
+        header h1 {
+            font-size: 3em;
+            color: white;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav button {
+            border-radius: 7px;
+            padding: 10px 20px;
+            border: none;
+            background: #a1887f;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+           font-family: 'Dancing Script';
+        }
+        nav button:hover {
+            background: #8d6e63;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fffaf4;
+        }
+        .container h3 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #8d6e63;
+           font-family: 'Dancing Script';
+        }
+        .imageadj {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px; 
+            justify-items: center;
+            margin-top: 20px;
+        }
+        .imageadj img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .imageadj img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .welcome, .reviews, .about-pets, .interested {
+            background: #fffaf4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .welcome:hover, .reviews:hover, .about-pets:hover, .interested:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .welcome h3, .reviews h3, .about-pets h3, .interested h3 {
+            text-align: center;
+            color: #8d6e63;
+           font-family: 'Dancing Script';
+        }
+        .welcome p, .reviews p, .about-pets p, .interested p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #5b4636;
+            font-family: 'Dancing Script';
+        }
+        .reviews h4 {
+            color: #5b4636;
+            margin-top: 20px;
+        }
+        .reviews p {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .main-two {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-two > div {
+            flex: 1;
+            min-width: 300px;
+        }
+        .interested {
+            margin-top: 20px;
+        }
+        footer {
+            background: linear-gradient(to left, #8d6e63, #a1887f);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Puppy Paws</h1>
+    </header>
+    
+    <nav>
+       
+        <button type="button" id="aboutus-btn">About Us</button>
+        <button type="button" id="reviews-btn">Reviews</button>
+        <button type="button" id="contact-btn" >contact</button>
+        
+    </nav>
+    
+    <div class="container">
+        <h3>Our Pets</h3>
+        <div class="imageadj">
+            <img src="dog4.jpeg" alt="Dog 1">
+            <img src="cat5.webp" alt="Cat 1">
+            <img src="dog2.jpeg" alt="Dog 2">
+            <img src="dog5.jpeg" alt="Cat 2">
+            <img src="dog3.webp" alt="Dog 3">
+            <img src="dog6.jpeg" alt="Cat 3">
+            <img src="bird3.webp" alt="Bird 1">
+            <img src="cat6.webp" alt="Cat 4">
+            <img src="bird2.jpeg" alt="Bird 2">
+        </div>
+    </div>
+    
+    <div class="main-two">
+        
+        <div class="welcome"  id="aboutus-btn">
+            <h3>Welcome to Puppy Paws</h3>
+            <p>Your one-stop destination for all things pet-related. We offer an array of pets from playful puppies and kittens to exotic birds and small animals, ensuring you find the perfect companion. At Puppy Paws, our mission is to provide top-notch care and products for your beloved pets.</p>
+            <p>We cater to various pet preferences and lifestyles. Whether you desire a bouncy puppy, a cuddly kitten, a vibrant parrot, or a gentle rabbit, we have the ideal pet for you. Our pets are lovingly cared for and eager to join their new families.</p>
+        </div>
+
+
+        <div class="reviews" id="reviews-btn" >
+            <h3>Customer Reviews</h3>
+            <h4>Jack</h4>
+            <p>"Puppy Paws is outstanding! I adopted my puppy, Max, here, and the staff was incredibly supportive and knowledgeable. They ensured I had everything to care for him. Highly recommend!"</p>
+            <h4>Devin</h4>
+            <p>"The best pet store in the area! They have a wide selection of pets and the staff is extremely friendly. I got my parrot, Polly, from Puppy Paws, and she's been a wonderful addition to our family. Great experience!"</p>
+            <h4>Luca</h4>
+            <p>"I love Puppy Paws! The store is clean and the pets are well cared for. I recently got a kitten, Luna, and she's healthy and playful. The staff provided excellent care advice. Thank you!"</p>
+            
+        </div>
+        <div class="about-pets" >
+            <h3>About Pets</h3>
+            <p>Pets bring joy, companionship, and numerous health benefits into our lives. They can help reduce stress, provide a sense of purpose, and keep us active. Different pets suit various lifestyles and preferences. Dogs are loyal and energetic, cats are independent and affectionate, birds are colorful and musical, and small animals are easy to care for. At Puppy Paws, we ensure all our pets are healthy, well-cared for, and ready to become cherished family members.</p>
+        </div>
+    </div>
+    
+    <div class="interested" id="contact-btn">
+        <h3>Interested in Buying a Pet?</h3>
+        <p>If you're interested in buying a pet or need more information about our available pets, please contact us. Our friendly staff is ready to assist and answer any questions you have.</p>
+        <p><strong>Contact Us:</strong><br>
+        Email: madhumithas313@gmail.com<br>
+        Phone: 8608492222</p>
+        <p>Visit us at:<br>
+        Puppy Paws Pet Shop<br>
+        1234 Pet Lane<br>
+        Petville, PA 12345</p>
+        <p>We look forward to helping you find your perfect pet!</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Puppy Paws. All rights reserved.</p>
+        <p>Contact us: madhumithas313@gmail.com | 8608492222</p>
+    </footer>
+</body>
+
+<script>
+    document.getElementById('aboutus-btn').addEventListener('click', function () {
+        document.querySelector('.welcome').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('reviews-btn').addEventListener('click', function () {
+        document.querySelector('.reviews').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('contact-btn').addEventListener('click', function () {
+        document.querySelector('.interested').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+</html>
+
+
+
+   
